@@ -237,6 +237,9 @@ clickhouse:
   # -- Extra volumes for clickhouse pods
   extraVolumes: []
 
+  # -- Extra volume mounts for clickhouse pods
+  extraVolumeMounts: []
+
   # -- Init scripts ConfigMap configuration
   initScripts:
     # -- Set to true to enable init scripts feature
@@ -298,4 +301,3 @@ operator:
   # -- Whether to enable the Altinity Operator for ClickHouse.
   # Disable if you already have the Operator installed cluster-wide.
   enabled: true
-  
